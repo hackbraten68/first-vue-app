@@ -3,6 +3,7 @@ const app = Vue.createApp({
     // template:"<h2>this is the template</h2>"
     data() {
         return {
+            showBooks: true,
             title: 'The Final Language',
             author: 'Sam Dickensen',
             age: 21
@@ -11,6 +12,9 @@ const app = Vue.createApp({
     methods: {
         changeTitle() {
            this.title = 'Words of Schmocks' 
+        },
+        toggleShowBooks() {
+            this.showBooks = !this.showBooks
         }
     }
 })
