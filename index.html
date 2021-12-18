@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Vue !</h1>
+
+    <div id="app">
+         <h2>{{ title }}</h2>
+         <p>{{ author }}</p>
+         <small>{{ age }}</small>
+
+         <button @click="age++">Increase Button</button>
+         <button @click="age--">Decrease Button</button>
+         <div @click="changeTitle">random text for now</div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
